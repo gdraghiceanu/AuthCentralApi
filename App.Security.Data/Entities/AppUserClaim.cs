@@ -13,7 +13,5 @@ namespace App.Security.Data.Entities
         public string ClaimValue { get; set; }
         public DateTime DateCreated { get; set; }
         public DateTime DateModified { get; set; }
-
-        public int MyPropert1111y { get; set; }
     }
 }
