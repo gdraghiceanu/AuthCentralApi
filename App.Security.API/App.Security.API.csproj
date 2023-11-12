@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\App.Security.Data\App.Security.Data.csproj" />
+    <ProjectReference Include="..\App.Security.Service\App.Security.Service.csproj" />
   </ItemGroup>
 
 </Project>

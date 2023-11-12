@@ -1,5 +1,7 @@
 using App.Security.Data;
 using App.Security.Data.Entities;
+using App.Security.Service.IServices;
+using App.Security.Service.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -17,6 +19,7 @@ builder.Services.AddDbContext<AppDbContext>(opt =>
 });
 builder.Services.AddIdentity<AppUser, IdentityRole<int>>().AddEntityFrameworkStores<AppDbContext>();
 
+builder.Services.AddScoped<IUserClaimService, UserClaimService>();
 
 var app = builder.Build();
 

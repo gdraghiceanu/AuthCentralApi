@@ -55,5 +55,7 @@ namespace App.Security.Data
 
             base.OnModelCreating(builder);
         }
+
+        public virtual DbSet<AppUserClaim> AppUserClaim { get; set; }
     }
 }
